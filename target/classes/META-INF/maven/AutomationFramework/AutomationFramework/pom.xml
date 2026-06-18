@@ -24,6 +24,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					 <groups>${group}</groups>
 				</configuration>
 			</plugin>
 		</plugins>
