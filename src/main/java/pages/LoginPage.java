@@ -43,7 +43,7 @@ public class LoginPage {
 			public void enterPassword(String pwd) {
 				log.info("Entering password:{}",pwd );
 				WaitUtils.waitForVisibility(driver,txt_pwd);
-				txt_userName.clear();
+				txt_pwd.clear();
 				txt_pwd.sendKeys(pwd);
 				
 			}

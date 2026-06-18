@@ -15,12 +15,12 @@ import utils.ScreenShotUtils;
 
 public class BaseTest {
 	private static final Logger log= LogManager.getLogger(BaseTest .class);
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void suiteSetUp() {
 		log.info("Suite Initialised");
 		ExtentManager.getInstance();
 	}
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		String browser=ConfigReader.getProperty("browser");
 		String url=ConfigReader.getProperty("url");
@@ -32,13 +32,13 @@ public class BaseTest {
 		
 		
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		System.out.println(">>TearDown Method...Closing Browser");
 		DriverFactory.quitDriver();
 	}
 	
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void suiteTearDown() {
 		log.info("Suite TearDown----Flush Reports");
 		ExtentManager.flush();

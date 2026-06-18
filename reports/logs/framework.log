@@ -61,3 +61,382 @@
 2026-06-18 14:05:39 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
 2026-06-18 14:05:39 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
 2026-06-18 14:05:39 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:20:44 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 15:20:44 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 15:20:44 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 15:20:44 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:20:44 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:20:44 [main] ERROR TestListner                    - Fail:tc_LT_001_validLogin|Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+2026-06-18 15:20:44 [main] WARN  ScreenShotUtils                - Screen shot Skipped--driver is null Test::tc_LT_001_validLogin
+2026-06-18 15:20:44 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=1 Skip=0
+2026-06-18 15:20:44 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:29:34 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 15:29:34 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 15:29:34 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 15:29:38 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 15:29:38 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:29:38 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:29:39 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:29:39 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:39 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 15:29:41 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 15:29:41 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:29:41 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:29:41 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:29:41 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:41 [main] INFO  TestListner                    - PASS:tc_LT_002_lockedOutUser
+2026-06-18 15:29:44 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:29:44 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 15:29:44 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 15:29:44 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:29:44 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:44 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:29:46 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:29:46 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:29:46 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:29:46 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 15:29:46 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:46 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:29:48 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:29:48 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 15:29:48 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 15:29:48 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 15:29:48 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:48 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|Error message Epic sadface: Username and password do not match any user in this service expected [true] but found [false]
+2026-06-18 15:29:49 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_152948.png
+2026-06-18 15:29:49 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_152948.png
+2026-06-18 15:29:50 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:29:50 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:29:50 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:29:51 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:29:51 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:51 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:29:54 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:29:54 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:29:54 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:29:54 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:29:54 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:54 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:29:56 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:29:56 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 15:29:56 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 15:29:57 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:29:57 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:29:57 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:30:00 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:30:00 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 15:30:00 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 15:30:00 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:30:00 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:30:05 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:30:05 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=8 Fail=1 Skip=0
+2026-06-18 15:30:06 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:30:06 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 15:30:06 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:39:12 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 15:39:13 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 15:39:13 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 15:39:13 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:39:13 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:39:13 [main] ERROR TestListner                    - Fail:tc_LT_002_lockedOutUser|Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+2026-06-18 15:39:13 [main] WARN  ScreenShotUtils                - Screen shot Skipped--driver is null Test::tc_LT_002_lockedOutUser
+2026-06-18 15:39:13 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=1 Skip=0
+2026-06-18 15:39:13 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:48:16 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 15:48:16 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 15:48:16 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 15:48:16 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:48:16 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:48:16 [main] ERROR TestListner                    - Fail:tc_LT_002_lockedOutUser|Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+2026-06-18 15:48:16 [main] WARN  ScreenShotUtils                - Screen shot Skipped--driver is null Test::tc_LT_002_lockedOutUser
+2026-06-18 15:48:16 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=1 Skip=0
+2026-06-18 15:48:16 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:53:09 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 15:53:09 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 15:53:09 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 15:53:16 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 15:53:16 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:53:16 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:53:16 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:53:16 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:16 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 15:53:19 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 15:53:19 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:53:19 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:53:19 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:53:19 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:20 [main] INFO  TestListner                    - PASS:tc_LT_002_lockedOutUser
+2026-06-18 15:53:23 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:53:23 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 15:53:23 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 15:53:23 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:53:23 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:23 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|Error message Epic sadface: Username and password do not match any user in this service expected [true] but found [false]
+2026-06-18 15:53:23 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_155323.png
+2026-06-18 15:53:23 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_155323.png
+2026-06-18 15:53:25 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:53:25 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:53:25 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:53:25 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 15:53:26 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:26 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:53:27 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:53:27 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 15:53:27 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 15:53:28 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 15:53:28 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:28 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|Error message Epic sadface: Username and password do not match any user in this service expected [true] but found [false]
+2026-06-18 15:53:28 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_155328.png
+2026-06-18 15:53:28 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_155328.png
+2026-06-18 15:53:30 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:53:30 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:53:30 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:53:30 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:53:30 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:30 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:53:33 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:53:33 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:53:33 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:53:33 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:53:33 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:33 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:53:37 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:53:37 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 15:53:37 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 15:53:37 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:53:37 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:37 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:53:39 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:53:39 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 15:53:39 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 15:53:39 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:53:39 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:53:44 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:53:45 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=7 Fail=2 Skip=0
+2026-06-18 15:53:45 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:53:45 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 15:53:45 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:57:14 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 15:57:14 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 15:57:14 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 15:57:16 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 15:57:16 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:57:16 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:57:16 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:57:16 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:16 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 15:57:18 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 15:57:18 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:57:18 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:57:18 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:57:18 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:18 [main] INFO  TestListner                    - PASS:tc_LT_002_lockedOutUser
+2026-06-18 15:57:21 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:57:21 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 15:57:21 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 15:57:21 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:57:21 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:21 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:57:23 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:57:23 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:57:23 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:57:23 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 15:57:23 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:23 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:57:25 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:57:25 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 15:57:25 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 15:57:25 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 15:57:25 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:25 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|Error message Epic sadface: Username and password do not match any user in this service expected [true] but found [false]
+2026-06-18 15:57:25 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_155725.png
+2026-06-18 15:57:25 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_155725.png
+2026-06-18 15:57:27 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:57:27 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 15:57:27 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 15:57:27 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:57:27 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:27 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 15:57:29 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:57:29 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 15:57:29 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 15:57:29 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:57:30 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:30 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:57:32 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:57:32 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 15:57:32 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 15:57:32 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:57:32 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:32 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:57:34 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:57:34 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 15:57:34 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 15:57:34 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 15:57:34 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 15:57:40 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 15:57:40 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=8 Fail=1 Skip=0
+2026-06-18 15:57:40 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 15:57:40 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 15:57:40 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 16:00:42 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 16:00:42 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 16:00:42 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 16:00:44 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 16:00:44 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 16:00:44 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 16:00:44 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:00:44 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:00:44 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 16:00:46 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 16:00:46 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 16:00:46 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 16:00:46 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:00:46 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:00:46 [main] INFO  TestListner                    - PASS:tc_LT_002_lockedOutUser
+2026-06-18 16:00:49 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:00:49 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 16:00:49 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 16:00:49 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:00:49 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:00:49 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:00:51 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:00:51 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 16:00:51 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 16:00:51 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 16:00:52 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:00:52 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:00:55 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:00:55 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 16:00:55 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 16:00:55 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 16:00:55 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:00:55 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:00:57 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:00:57 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 16:00:57 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 16:00:58 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:00:58 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:00:58 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 16:01:00 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 16:01:00 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 16:01:00 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 16:01:00 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:01:00 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:01:00 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 16:01:02 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 16:01:02 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 16:01:02 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 16:01:02 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:01:02 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:01:02 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 16:01:04 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 16:01:04 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 16:01:04 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 16:01:04 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:01:04 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:01:10 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 16:01:10 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=9 Fail=0 Skip=0
+2026-06-18 16:01:10 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 16:01:10 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 16:01:10 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 16:03:55 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 16:03:55 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 16:03:55 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=0 Skip=0
+2026-06-18 16:03:56 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 16:05:07 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 16:05:07 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 16:05:07 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 16:05:07 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 16:05:07 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 16:05:07 [main] ERROR TestListner                    - Fail:tc_LT_001_validLogin|Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+2026-06-18 16:05:07 [main] WARN  ScreenShotUtils                - Screen shot Skipped--driver is null Test::tc_LT_001_validLogin
+2026-06-18 16:05:07 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=1 Skip=0
+2026-06-18 16:05:08 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 16:07:52 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 16:07:52 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 16:07:52 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 16:07:55 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 16:07:56 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 16:07:56 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 16:07:56 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 16:07:56 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 16:07:56 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 16:07:56 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=1 Fail=0 Skip=0
+2026-06-18 16:07:56 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 16:07:56 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 16:07:56 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 17:22:48 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 17:22:48 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 17:22:48 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 17:22:53 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 17:22:53 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 17:22:53 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 17:22:53 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:22:53 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:22:54 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 17:22:56 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 17:22:56 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 17:22:56 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 17:22:57 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:22:57 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:22:57 [main] INFO  TestListner                    - PASS:tc_LT_002_lockedOutUser
+2026-06-18 17:23:00 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:00 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 17:23:00 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 17:23:00 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:23:01 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:23:01 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:03 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:03 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 17:23:03 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 17:23:04 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 17:23:04 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:23:04 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:06 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:06 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 17:23:06 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 17:23:07 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 17:23:07 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:23:07 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:10 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:10 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 17:23:10 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 17:23:11 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:23:11 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:23:11 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 17:23:14 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 17:23:14 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 17:23:14 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 17:23:14 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:23:15 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:23:15 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 17:23:17 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 17:23:17 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 17:23:17 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 17:23:18 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:23:18 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:23:18 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 17:23:21 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 17:23:21 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 17:23:21 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 17:23:21 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:23:21 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:23:26 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 17:23:27 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=9 Fail=0 Skip=0
+2026-06-18 17:23:28 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 17:23:28 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 17:23:28 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 17:30:59 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 17:30:59 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 17:30:59 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 17:31:02 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 17:31:02 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 17:31:02 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 17:31:02 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 17:31:03 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 17:31:03 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 17:31:03 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=1 Fail=0 Skip=0
+2026-06-18 17:31:04 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 17:31:04 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 17:31:04 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html

@@ -1,272 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-18T14:05:09 IST" name="Hybrid-Framework-Suite" finished-at="2026-06-18T14:05:38 IST" duration-ms="28868">
+  <suite started-at="2026-06-18T17:30:59 IST" name="Hybrid-Framework-Suite" finished-at="2026-06-18T17:31:03 IST" duration-ms="4508">
     <groups>
+      <group name="smoke">
+        <method signature="LoginTest.tc_LT_001_validLogin()[pri:0, instance:tests.LoginTest@59d4cd39]" name="tc_LT_001_validLogin" class="tests.LoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-06-18T14:05:09 IST" name="Login-Tests" finished-at="2026-06-18T14:05:38 IST" duration-ms="28868">
+    <test started-at="2026-06-18T17:30:59 IST" name="Login-Tests" finished-at="2026-06-18T17:31:03 IST" duration-ms="4508">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="suiteSetUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:09 IST" name="suiteSetUp" finished-at="2026-06-18T14:05:09 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="suiteSetUp()[pri:0, instance:tests.LoginTest@59d4cd39]" started-at="2026-06-18T17:30:59 IST" name="suiteSetUp" finished-at="2026-06-18T17:30:59 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:10 IST" name="setUp" finished-at="2026-06-18T14:05:13 IST" duration-ms="3749" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@59d4cd39]" started-at="2026-06-18T17:30:59 IST" name="setUp" finished-at="2026-06-18T17:31:02 IST" duration-ms="3041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_001_validLogin()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:13 IST" name="tc_LT_001_validLogin" finished-at="2026-06-18T14:05:14 IST" duration-ms="507" status="PASS">
+        <test-method signature="tc_LT_001_validLogin()[pri:0, instance:tests.LoginTest@59d4cd39]" started-at="2026-06-18T17:31:02 IST" name="tc_LT_001_validLogin" finished-at="2026-06-18T17:31:03 IST" duration-ms="1105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_LT_001_validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:14 IST" name="tearDown" finished-at="2026-06-18T14:05:14 IST" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@59d4cd39]" started-at="2026-06-18T17:31:03 IST" name="tearDown" finished-at="2026-06-18T17:31:03 IST" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:14 IST" name="setUp" finished-at="2026-06-18T14:05:16 IST" duration-ms="1857" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_002_lockedOutUser()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:16 IST" name="tc_LT_002_lockedOutUser" finished-at="2026-06-18T14:05:16 IST" duration-ms="363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_002_lockedOutUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:16 IST" name="tearDown" finished-at="2026-06-18T14:05:16 IST" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:17 IST" name="setUp" finished-at="2026-06-18T14:05:19 IST" duration-ms="2658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_003_dataDriverInValidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:19 IST" name="tc_LT_003_dataDriverInValidLogin" data-provider="invalidLoginData" finished-at="2026-06-18T14:05:20 IST" duration-ms="321" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Epic sadface: Username is required]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_003_dataDriverInValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:20 IST" name="tearDown" finished-at="2026-06-18T14:05:20 IST" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:20 IST" name="setUp" finished-at="2026-06-18T14:05:22 IST" duration-ms="1817" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_003_dataDriverInValidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:22 IST" name="tc_LT_003_dataDriverInValidLogin" data-provider="invalidLoginData" finished-at="2026-06-18T14:05:22 IST" duration-ms="426" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Password is required]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_003_dataDriverInValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:22 IST" name="tearDown" finished-at="2026-06-18T14:05:22 IST" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:22 IST" name="setUp" finished-at="2026-06-18T14:05:24 IST" duration-ms="1571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_003_dataDriverInValidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:24 IST" name="tc_LT_003_dataDriverInValidLogin" data-provider="invalidLoginData" finished-at="2026-06-18T14:05:24 IST" duration-ms="373" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wrong_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrong_user]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[UserName and Password Donot Match]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message Epic sadface: Username and password do not match any user in this service expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message Epic sadface: Username and password do not match any user in this service expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.LoginTest.tc_LT_003_dataDriverInValidLogin(LoginTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_003_dataDriverInValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:24 IST" name="tearDown" finished-at="2026-06-18T14:05:25 IST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:25 IST" name="setUp" finished-at="2026-06-18T14:05:26 IST" duration-ms="1603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_003_dataDriverInValidLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:26 IST" name="tc_LT_003_dataDriverInValidLogin" data-provider="invalidLoginData" finished-at="2026-06-18T14:05:27 IST" duration-ms="365" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Sorry, this user has been locked out.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_003_dataDriverInValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:27 IST" name="tearDown" finished-at="2026-06-18T14:05:27 IST" duration-ms="176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:27 IST" name="setUp" finished-at="2026-06-18T14:05:28 IST" duration-ms="1588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_003_dataDriverValidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:28 IST" name="tc_LT_003_dataDriverValidLogin" data-provider="validLoginData" finished-at="2026-06-18T14:05:29 IST" duration-ms="358" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_003_dataDriverValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:29 IST" name="tearDown" finished-at="2026-06-18T14:05:29 IST" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:29 IST" name="setUp" finished-at="2026-06-18T14:05:31 IST" duration-ms="1605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_003_dataDriverValidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:31 IST" name="tc_LT_003_dataDriverValidLogin" data-provider="validLoginData" finished-at="2026-06-18T14:05:31 IST" duration-ms="495" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[problem_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_003_dataDriverValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:31 IST" name="tearDown" finished-at="2026-06-18T14:05:31 IST" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:31 IST" name="setUp" finished-at="2026-06-18T14:05:33 IST" duration-ms="1618" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="tc_LT_003_dataDriverValidLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:33 IST" name="tc_LT_003_dataDriverValidLogin" data-provider="validLoginData" finished-at="2026-06-18T14:05:38 IST" duration-ms="5394" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[performance_glitch_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LT_003_dataDriverValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:38 IST" name="tearDown" finished-at="2026-06-18T14:05:38 IST" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.LoginTest@1187c9e8]" started-at="2026-06-18T14:05:39 IST" name="suiteTearDown" finished-at="2026-06-18T14:05:39 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.LoginTest@59d4cd39]" started-at="2026-06-18T17:31:04 IST" name="suiteTearDown" finished-at="2026-06-18T17:31:04 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->

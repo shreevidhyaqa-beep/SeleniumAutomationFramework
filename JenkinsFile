@@ -3,37 +3,40 @@ pipeline {
 
     parameters {
         choice(
-            name: 'TEST_GROUP',
-            choices: ['smoke', 'sanity', 'regression'],
-            description: 'Select test group'
+            name: 'TEST_SUITE_TYPE',
+            choices: ['all', 'smoke', 'sanity', 'regression'],
+            description: 'Select the targeted test group suite to execute.'
         )
     }
 
     stages {
-
-        stage('Checkout') {
+        stage('Checkout Code') {
             steps {
+                // Pulls code clean from the attached Git repository
                 checkout scm
             }
         }
 
-        stage('Build & Execute') {
+        stage('Execute Automation') {
             steps {
-                bat "mvn clean test -Dgroup=${params.TEST_GROUP}"
+                script {
+                    if (params.TEST_SUITE_TYPE == 'all') {
+                        echo "Running Full Automation Regression Suite..."
+                        bat "mvn clean test"
+                    } else {
+                        echo "Running Targeted Group: ${params.TEST_SUITE_TYPE}"
+                        // -Dgroups must have an "s" at the end for Surefire to process it
+                        bat "mvn clean test -Dgroups=${params.TEST_SUITE_TYPE}"
+                    }
+                }
             }
         }
     }
 
     post {
-    always {
-        publishHTML([
-            allowMissing: false,
-            alwaysLinkToLastBuild: true,
-            keepAll: true,
-            reportDir: 'reports',
-            reportFiles: 'ExtentReport.html',
-            reportName: 'Extent Report'
-        ])
+        always {
+            // Generates test trend UI charts inside Jenkins automatically
+            junit 'target/surefire-reports/*.xml'
+        }
     }
-}
 }

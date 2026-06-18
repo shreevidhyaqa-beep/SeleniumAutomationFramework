@@ -23,8 +23,8 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-					 <groups>${group}</groups>
+					</suiteXmlFiles>		 
+					
 				</configuration>
 			</plugin>
 		</plugins>
