@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(
+            name: 'TEST_GROUP',
+            choices: ['smoke', 'sanity', 'regression'],
+            description: 'Select test group'
+        )
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build & Execute') {
+            steps {
+                bat "mvn clean test -Dgroup=${params.TEST_GROUP}"
+            }
+        }
+    }
+
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
+        }
+    }
+}

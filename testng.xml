@@ -5,6 +5,11 @@
 		<listener class-name="listners.TestListner"></listener>
 	</listeners>
 	<test name="Login-Tests">
+		<groups>
+			<run>
+				<include name="${group}" />
+			</run>
+		</groups>
 		<classes>
 			<class name="tests.LoginTest" />
 		</classes>

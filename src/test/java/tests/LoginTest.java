@@ -10,7 +10,7 @@ import pages.LoginPage;
 public class LoginTest extends BaseTest {
 	
 	
-	@Test
+	@Test(groups="sanity")
 	public void tc_LT_001_validLogin() 
 	{
 		LoginPage  loginPage =new LoginPage(getDriver());
@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertTrue(getDriver().getCurrentUrl().contains("inventory"),"Login Failed");
 		
 	}
-	@Test
+	@Test(groups= {"sanity","smoke"})
 	public void tc_LT_002_lockedOutUser() {
 		LoginPage  loginPage =new LoginPage(getDriver());
 		loginPage.login("locked_out_user","secret_sauce");
@@ -28,7 +28,8 @@ public class LoginTest extends BaseTest {
 		
 		
 	}
-	@Test(dataProvider="validLoginData",dataProviderClass=LoginDataProvider.class)
+	@Test(dataProvider="validLoginData",dataProviderClass=LoginDataProvider.class,
+			groups= {"regression"})
 	public void tc_LT_003_dataDriverValidLogin(String userName,String password) {
 		LoginPage  loginPage =new LoginPage(getDriver());
 		loginPage.login(userName,password);
