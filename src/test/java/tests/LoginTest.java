@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertTrue(getDriver().getCurrentUrl().contains("inventory"),"Login Failed");
 		
 	}
-	@Test(groups= {"sanity","smoke"})
+	@Test(groups= {"smoke"})
 	public void tc_LT_002_lockedOutUser() {
 		LoginPage  loginPage =new LoginPage(getDriver());
 		loginPage.login("locked_out_user","secret_sauce");
