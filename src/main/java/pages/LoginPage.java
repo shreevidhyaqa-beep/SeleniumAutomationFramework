@@ -50,7 +50,7 @@ public class LoginPage {
 			public void clickLogin() {
 				WaitUtils.waitForClickability(driver, btn_login);
 				log.info("clicking login Button");
-				log.info("adding line");
+//				log.info("adding line");
 				
 			}
 			
