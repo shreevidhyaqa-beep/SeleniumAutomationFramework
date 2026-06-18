@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 47.00 s <<< FAILURE! -- in TestSuite
-tests.LoginTest.tc_LT_003_dataDriverInValidLogin[wrong_user, wrong_user, UserName and Password Donot Match](3) -- Time elapsed: 1.280 s <<< FAILURE!
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.73 s <<< FAILURE! -- in TestSuite
+tests.LoginTest.tc_LT_003_dataDriverInValidLogin[wrong_user, wrong_user, UserName and Password Donot Match](3) -- Time elapsed: 0.490 s <<< FAILURE!
 java.lang.AssertionError: Error message Epic sadface: Username and password do not match any user in this service expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
