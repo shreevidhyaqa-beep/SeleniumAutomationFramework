@@ -562,3 +562,732 @@
 2026-06-18 18:37:29 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
 2026-06-18 18:37:29 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
 2026-06-18 18:37:29 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 20:42:26 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 20:42:26 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 20:42:26 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 20:42:28 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 20:42:28 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 20:42:28 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 20:42:28 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:42:29 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:29 [main] ERROR TestListner                    - Fail:tc_LT_001_validLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:42:29 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_204229.png
+2026-06-18 20:42:29 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_204229.png
+2026-06-18 20:42:30 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 20:42:30 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 20:42:30 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 20:42:31 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:42:31 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:31 [main] ERROR LoginPage                      - Unable to locate container
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a419d99048c41b71a02e53af15dd6603, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64588}, goog:processID: 21584, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64588/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a419d99048c41b71a02e53af15dd6603
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at pages.LoginPage.isErrorDisplayed(LoginPage.java:66)
+	at tests.LoginTest.tc_LT_002_lockedOutUser(LoginTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-18 20:42:31 [main] ERROR TestListner                    - Fail:tc_LT_002_lockedOutUser|Error message Should Appear expected [true] but found [false]
+2026-06-18 20:42:31 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_204231.png
+2026-06-18 20:42:31 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_204231.png
+2026-06-18 20:42:33 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:42:33 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 20:42:33 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 20:42:33 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:42:33 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:33 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4750eedf4575855c5cfc86b70fc6a1d9, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63063}, goog:processID: 27012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63063/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4750eedf4575855c5cfc86b70fc6a1d9
+2026-06-18 20:42:33 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204233.png
+2026-06-18 20:42:33 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204233.png
+2026-06-18 20:42:36 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:42:36 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 20:42:36 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 20:42:36 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 20:42:36 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:36 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d13b42ec1c1e6ddf45b0b314c234533b, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62067}, goog:processID: 18508, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62067/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d13b42ec1c1e6ddf45b0b314c234533b
+2026-06-18 20:42:36 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204236.png
+2026-06-18 20:42:36 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204236.png
+2026-06-18 20:42:38 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:42:38 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 20:42:38 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 20:42:38 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 20:42:38 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:38 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adb820cad1aafa4516786db174423434, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63821}, goog:processID: 26284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63821/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: adb820cad1aafa4516786db174423434
+2026-06-18 20:42:38 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204238.png
+2026-06-18 20:42:38 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204238.png
+2026-06-18 20:42:40 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:42:40 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 20:42:40 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 20:42:40 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:42:40 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:40 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5e4b647f66943f113bd9b8295a3a15e, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58834}, goog:processID: 9516, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58834/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5e4b647f66943f113bd9b8295a3a15e
+2026-06-18 20:42:40 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204240.png
+2026-06-18 20:42:40 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_204240.png
+2026-06-18 20:42:42 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 20:42:42 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 20:42:42 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 20:42:42 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:42:42 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:42 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:42:42 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_204242.png
+2026-06-18 20:42:42 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_204242.png
+2026-06-18 20:42:44 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 20:42:44 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 20:42:44 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 20:42:44 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:42:44 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:44 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:42:44 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_204244.png
+2026-06-18 20:42:44 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_204244.png
+2026-06-18 20:42:46 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 20:42:46 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 20:42:46 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 20:42:46 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:42:46 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:42:46 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:42:46 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_204246.png
+2026-06-18 20:42:46 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_204246.png
+2026-06-18 20:42:47 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=9 Skip=0
+2026-06-18 20:42:47 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 20:42:47 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 20:42:47 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 20:53:30 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 20:53:30 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 20:53:30 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 20:53:39 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 20:53:39 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 20:53:39 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 20:53:39 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:53:39 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:39 [main] ERROR TestListner                    - Fail:tc_LT_001_validLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:53:39 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_205339.png
+2026-06-18 20:53:39 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_205339.png
+2026-06-18 20:53:41 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 20:53:41 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 20:53:41 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 20:53:41 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:53:41 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:41 [main] ERROR LoginPage                      - Unable to locate container
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f7377198bcddc26f0ba0bdcebc7aab2, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63584}, goog:processID: 15928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63584/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f7377198bcddc26f0ba0bdcebc7aab2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at pages.LoginPage.isErrorDisplayed(LoginPage.java:66)
+	at tests.LoginTest.tc_LT_002_lockedOutUser(LoginTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-18 20:53:41 [main] ERROR TestListner                    - Fail:tc_LT_002_lockedOutUser|Error message Should Appear expected [true] but found [false]
+2026-06-18 20:53:41 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_205341.png
+2026-06-18 20:53:41 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_205341.png
+2026-06-18 20:53:44 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:53:44 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 20:53:44 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 20:53:44 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:53:44 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:44 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df100553efd2f91ecea4c3cc943461b6, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54669}, goog:processID: 27308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54669/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df100553efd2f91ecea4c3cc943461b6
+2026-06-18 20:53:44 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205344.png
+2026-06-18 20:53:44 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205344.png
+2026-06-18 20:53:46 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:53:46 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 20:53:46 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 20:53:46 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 20:53:46 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:46 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63a836bd3d9750182e7859ee27ca8a8b, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57707}, goog:processID: 12776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57707/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63a836bd3d9750182e7859ee27ca8a8b
+2026-06-18 20:53:46 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205346.png
+2026-06-18 20:53:46 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205346.png
+2026-06-18 20:53:48 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:53:48 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 20:53:48 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 20:53:48 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 20:53:48 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:48 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [090fb8b62897ad569689557356fa7a4c, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59350}, goog:processID: 18372, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59350/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 090fb8b62897ad569689557356fa7a4c
+2026-06-18 20:53:48 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205348.png
+2026-06-18 20:53:48 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205348.png
+2026-06-18 20:53:50 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 20:53:50 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 20:53:50 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 20:53:50 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:53:50 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:50 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5e6011f8fc6d5f7e86caedc9dd62b855, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58251}, goog:processID: 492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58251/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e6011f8fc6d5f7e86caedc9dd62b855
+2026-06-18 20:53:50 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205350.png
+2026-06-18 20:53:50 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_205350.png
+2026-06-18 20:53:52 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 20:53:52 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 20:53:52 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 20:53:52 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:53:53 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:53 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:53:53 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_205353.png
+2026-06-18 20:53:53 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_205353.png
+2026-06-18 20:53:54 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 20:53:54 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 20:53:54 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 20:53:55 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:53:55 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:55 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:53:55 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_205355.png
+2026-06-18 20:53:55 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_205355.png
+2026-06-18 20:53:56 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 20:53:56 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 20:53:56 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 20:53:57 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 20:53:57 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 20:53:57 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 20:53:57 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_205357.png
+2026-06-18 20:53:57 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_205357.png
+2026-06-18 20:53:57 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=9 Skip=0
+2026-06-18 20:53:57 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 20:53:57 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 20:53:57 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 22:03:57 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 22:03:57 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 22:03:57 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 22:04:05 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 22:04:05 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:04:05 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:04:05 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:04:06 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:06 [main] ERROR TestListner                    - Fail:tc_LT_001_validLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:04:06 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_220406.png
+2026-06-18 22:04:06 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_220406.png
+2026-06-18 22:04:09 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 22:04:09 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 22:04:09 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 22:04:09 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:04:10 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:10 [main] ERROR LoginPage                      - Unable to locate container
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d50acc17b66fac63179ef22e2a32d071, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63430}, goog:processID: 27456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63430/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d50acc17b66fac63179ef22e2a32d071
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at pages.LoginPage.isErrorDisplayed(LoginPage.java:66)
+	at tests.LoginTest.tc_LT_002_lockedOutUser(LoginTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-18 22:04:10 [main] ERROR TestListner                    - Fail:tc_LT_002_lockedOutUser|Error message Should Appear expected [true] but found [false]
+2026-06-18 22:04:10 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_220410.png
+2026-06-18 22:04:10 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_220410.png
+2026-06-18 22:04:13 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:04:13 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 22:04:13 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 22:04:14 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:04:14 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:14 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b3f3d94b5a70d75140ecb0a6f684ed0, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52620}, goog:processID: 27276, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52620/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b3f3d94b5a70d75140ecb0a6f684ed0
+2026-06-18 22:04:14 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220414.png
+2026-06-18 22:04:14 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220414.png
+2026-06-18 22:04:16 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:04:16 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:04:16 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:04:17 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 22:04:17 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:17 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5aef51025f92c647993432ac2540718d, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52764}, goog:processID: 22320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52764/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5aef51025f92c647993432ac2540718d
+2026-06-18 22:04:17 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220417.png
+2026-06-18 22:04:17 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220417.png
+2026-06-18 22:04:19 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:04:19 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 22:04:19 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 22:04:20 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 22:04:20 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:20 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6061fba89b3b5193190cf9a4fb50273e, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55551}, goog:processID: 1412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55551/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6061fba89b3b5193190cf9a4fb50273e
+2026-06-18 22:04:20 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220420.png
+2026-06-18 22:04:20 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220420.png
+2026-06-18 22:04:22 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:04:22 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 22:04:22 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 22:04:23 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:04:23 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:23 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ddb4185ba23c8c4d558acec71e6c55f4, findElement {using=css selector, value=[data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60065}, goog:processID: 15292, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60065/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddb4185ba23c8c4d558acec71e6c55f4
+2026-06-18 22:04:23 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220423.png
+2026-06-18 22:04:23 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220423.png
+2026-06-18 22:04:26 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:04:26 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:04:26 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:04:26 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:04:26 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:26 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:04:27 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220426.png
+2026-06-18 22:04:27 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220426.png
+2026-06-18 22:04:29 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:04:29 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 22:04:29 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 22:04:29 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:04:29 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:29 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:04:30 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220429.png
+2026-06-18 22:04:30 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220429.png
+2026-06-18 22:04:32 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:04:32 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 22:04:32 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 22:04:32 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:04:33 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:04:33 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:04:33 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220433.png
+2026-06-18 22:04:33 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220433.png
+2026-06-18 22:04:33 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=9 Skip=0
+2026-06-18 22:04:33 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 22:04:33 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 22:04:34 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 22:08:42 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 22:08:42 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 22:08:42 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 22:08:44 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 22:08:45 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:08:45 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:08:45 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:08:45 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:08:46 [main] ERROR TestListner                    - Fail:tc_LT_001_validLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:08:46 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_220846.png
+2026-06-18 22:08:46 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_001_validLogin_20260618_220846.png
+2026-06-18 22:08:48 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 22:08:48 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 22:08:48 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 22:08:48 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:08:49 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:08:49 [main] ERROR LoginPage                      - Unable to locate container
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e66e978e27648bfb69a05ef8907892e, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55356}, goog:processID: 25240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55356/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e66e978e27648bfb69a05ef8907892e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at pages.LoginPage.isErrorDisplayed(LoginPage.java:66)
+	at tests.LoginTest.tc_LT_002_lockedOutUser(LoginTest.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+2026-06-18 22:08:49 [main] ERROR TestListner                    - Fail:tc_LT_002_lockedOutUser|Error message Should Appear expected [true] but found [false]
+2026-06-18 22:08:49 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_220849.png
+2026-06-18 22:08:49 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_002_lockedOutUser_20260618_220849.png
+2026-06-18 22:08:52 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:08:52 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 22:08:52 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 22:08:52 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:08:52 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:08:52 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [908414a29578762b35334e05460c7181, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52216}, goog:processID: 23504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52216/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 908414a29578762b35334e05460c7181
+2026-06-18 22:08:52 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220852.png
+2026-06-18 22:08:52 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220852.png
+2026-06-18 22:08:54 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:08:54 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:08:54 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:08:55 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 22:08:55 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:08:55 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [111979d9a3676a1a2b79af05ec1c0933, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50126}, goog:processID: 23480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50126/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 111979d9a3676a1a2b79af05ec1c0933
+2026-06-18 22:08:55 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220855.png
+2026-06-18 22:08:55 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220855.png
+2026-06-18 22:08:57 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:08:57 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 22:08:57 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 22:08:58 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 22:08:58 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:08:58 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dd5e5f4f90072de51c3f58df06235905, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53545}, goog:processID: 20968, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53545/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd5e5f4f90072de51c3f58df06235905
+2026-06-18 22:08:58 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220858.png
+2026-06-18 22:08:58 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220858.png
+2026-06-18 22:09:00 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:00 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 22:09:00 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 22:09:01 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:01 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:01 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverInValidLogin|no such element: Unable to locate element: {"method":"css selector","selector":"[data-test='error']"}
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a97e7323cac13a89268d0caf9fab15, findElement {value=[data-test='error'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\hvani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49679}, goog:processID: 22332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49679/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a97e7323cac13a89268d0caf9fab15
+2026-06-18 22:09:01 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220901.png
+2026-06-18 22:09:01 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverInValidLogin_20260618_220901.png
+2026-06-18 22:09:04 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:09:04 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:09:04 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:09:04 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:04 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:04 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:09:05 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220904.png
+2026-06-18 22:09:05 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220904.png
+2026-06-18 22:09:07 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:09:07 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 22:09:07 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 22:09:07 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:07 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:07 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:09:08 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220907.png
+2026-06-18 22:09:08 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220907.png
+2026-06-18 22:09:10 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:09:10 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 22:09:10 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 22:09:10 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:11 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:11 [main] ERROR TestListner                    - Fail:tc_LT_003_dataDriverValidLogin|Login Failed expected [true] but found [false]
+2026-06-18 22:09:11 [main] INFO  ScreenShotUtils                - Screen shot saved::C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220911.png
+2026-06-18 22:09:11 [main] INFO  TestListner                    - Screenshot attached:C:\JavaSeleniumAutomation\AutomationFramework\reports\screenshotstc_LT_003_dataDriverValidLogin_20260618_220911.png
+2026-06-18 22:09:11 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=0 Fail=9 Skip=0
+2026-06-18 22:09:11 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 22:09:11 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 22:09:11 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 22:09:38 [main] INFO  BaseTest                       - Suite Initialised
+2026-06-18 22:09:38 [main] INFO  ExtentManager                  - ExtentReport created report path::reports/extent-reports/ExtentReport.html
+2026-06-18 22:09:38 [main] INFO  TestListner                    - Suite started:Login-Tests
+2026-06-18 22:09:41 [main] INFO  TestListner                    - Test started:tc_LT_001_validLogin
+2026-06-18 22:09:41 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:09:41 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:09:41 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:42 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:42 [main] INFO  TestListner                    - PASS:tc_LT_001_validLogin
+2026-06-18 22:09:44 [main] INFO  TestListner                    - Test started:tc_LT_002_lockedOutUser
+2026-06-18 22:09:44 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 22:09:44 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 22:09:44 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:44 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:45 [main] INFO  TestListner                    - PASS:tc_LT_002_lockedOutUser
+2026-06-18 22:09:48 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:48 [main] INFO  LoginPage                      - logging as user 
+2026-06-18 22:09:48 [main] INFO  LoginPage                      - Entering userName:
+2026-06-18 22:09:49 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:49 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:49 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:52 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:52 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:09:52 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:09:52 [main] INFO  LoginPage                      - Entering password:
+2026-06-18 22:09:52 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:53 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:55 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:55 [main] INFO  LoginPage                      - logging as user wrong_user
+2026-06-18 22:09:55 [main] INFO  LoginPage                      - Entering userName:wrong_user
+2026-06-18 22:09:55 [main] INFO  LoginPage                      - Entering password:wrong_user
+2026-06-18 22:09:55 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:55 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:57 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:09:57 [main] INFO  LoginPage                      - logging as user locked_out_user
+2026-06-18 22:09:57 [main] INFO  LoginPage                      - Entering userName:locked_out_user
+2026-06-18 22:09:58 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:09:58 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:09:59 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverInValidLogin
+2026-06-18 22:10:01 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:10:01 [main] INFO  LoginPage                      - logging as user standard_user
+2026-06-18 22:10:01 [main] INFO  LoginPage                      - Entering userName:standard_user
+2026-06-18 22:10:01 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:10:01 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:10:02 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:10:04 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:10:04 [main] INFO  LoginPage                      - logging as user problem_user
+2026-06-18 22:10:04 [main] INFO  LoginPage                      - Entering userName:problem_user
+2026-06-18 22:10:04 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:10:04 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:10:05 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:10:07 [main] INFO  TestListner                    - Test started:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:10:07 [main] INFO  LoginPage                      - logging as user performance_glitch_user
+2026-06-18 22:10:07 [main] INFO  LoginPage                      - Entering userName:performance_glitch_user
+2026-06-18 22:10:07 [main] INFO  LoginPage                      - Entering password:secret_sauce
+2026-06-18 22:10:08 [main] INFO  LoginPage                      - clicking login Button
+2026-06-18 22:10:13 [main] INFO  TestListner                    - PASS:tc_LT_003_dataDriverValidLogin
+2026-06-18 22:10:13 [main] INFO  TestListner                    - Suite Completed:Login-Tests |Pass=9 Fail=0 Skip=0
+2026-06-18 22:10:13 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
+2026-06-18 22:10:13 [main] INFO  BaseTest                       - Suite TearDown----Flush Reports
+2026-06-18 22:10:13 [main] INFO  ExtentManager                  - Extent report flushed. reports/extent-reports/ExtentReport.html
